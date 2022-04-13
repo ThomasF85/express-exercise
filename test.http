@@ -2,3 +2,19 @@ GET http://localhost:3333/jokes
 ###
 GET http://localhost:3333/jokes/nvhGGI9AeEZKyVPDZorjQ
 ###
+POST http://localhost:3333/jokes
+content-type: application/json
+
+{
+  "joke": "new random joke"
+}
+###
+PATCH http://localhost:3333/jokes/nvhGGI9AeEZKyVPDZorjQ
+content-type: application/json
+
+{
+  "joke": "a totally changed joke"
+}
+###
+DELETE http://localhost:3333/jokes/nvhGGI9AeEZKyVPDZorjQ
+###
